@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEDEX</title>
+    <style>
+
+        @font-face {
+            font-family: pokemon;
+            src: url(fonts/ARCADECLASSIC.TTF);
+        }
+        body {
+            display: grid;
+            place-items: center;
+            font-family: pokemon;
+            background-image: url(img/background-2.png);
+           
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 2px;
+            margin-bottom: 6px;
+        }
+
+        thead,
+        td,
+        th {
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        table {
+            margin-top: 50px;
+        }
+
+        .pokedex-back {
+            height: 500px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        form {
+            position: absolute;
+            top: 423px;
+            left: 486px;
+        }
+
+        input {
+            background: #8dc73f;
+           text-align: center;
+            width: 294px;
+            border-radius: 30px;
+            height: 26px;
+            font-family: pokemon;
+            color: rgb(101, 100, 100);
+            border: 2px solid black;
+            font-size: 18px;
+        }
+        
+        button{position: absolute; top: 66px;  left: 259px; height:20px;width: 30px; background:none; border: none;}
+    
+       .display img{height: 200px}
+       .name,.type{margin-top: 10px; margin-bottom: 0px;}
+       .console{color:#636363;margin-top: 90px;}
+       .console p{margin-top: -12px; font-family: 'Times New Roman', Times, serif;}
+       .console span{font-family: pokemon; font-size: 18px;}
+       /* .error{margin-top: 100px;} */
+       /* .image{display: flex; align-items: center; justify-content: center;} */
+       .display{position: absolute;top: 137px;left: 496px; background: black; z-index: 3;      width: 273px;
+        height: 265px; display: grid; place-items: center; color:white}
+        .inst{background: black; color:white; height: 50px;width: 250px; display: grid; place-items: center; position: absolute; top:414px; left :214px; border-radius: 20px;}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>POKEDEX </h1>
+        <form class="pok">
+            <input type="search">
+            <button></button>
+        </form>
+        <!-- <table>
+        <thead>
+            <tr>
+           
+        </tr>
+        </thead>
+        <tr class="pokerow">
+           
+
+        </tr>
+    </table> -->
+     <div class="display">
+        <div class="image">
+        </div>
+        <p class="name"></p>
+        <p class="type"></p>
+        <div class="console">    
+                <p class="HP"></p>
+                <p class="attack"></p>
+        
+    </div>
+
+
+     </div>
+
+        <img src="img/pokedex.jpg" alt="" class="pokedex-back">
+
+     <div class="inst"><p>SEARCH FOR A POKEMON HERE =></p></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
